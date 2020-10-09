@@ -69,7 +69,7 @@ plt.show()
 
 print('nu varies')
 for nu in nu_vec:
-    print('nu:' nu)
+    print('nu:', nu)
     yval = sabr.volsabr_h_n_tf(f, kval, T, displacement, alpha, beta, rho_org,nu)
     plt.plot(kval,yval,label=nu)
 plt.title('nu varies')
